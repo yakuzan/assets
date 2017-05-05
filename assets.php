@@ -1,6 +1,7 @@
 <?php
 
-function attrs($attrs) {
+function attrs($attrs)
+{
     $str = '';
 
     foreach ($attrs as $key => $value) {
@@ -10,35 +11,35 @@ function attrs($attrs) {
     return $str;
 }
 
-if (! function_exists('css')) {
+if (!function_exists('css')) {
     function css($href = '', $attrs = [])
     {
         return '<link rel="stylesheet" type="text/css" href="'.$href.'"'.attrs($attrs).'>';
     }
 }
 
-if (! function_exists('less')) {
+if (!function_exists('less')) {
     function less($href = '', $attrs = [])
     {
         return '<link rel="stylesheet/less" type="text/css" href="'.$href.'"'.attrs($attrs).'>';
     }
 }
 
-if (! function_exists('js')) {
-    function js($src = null, $default ='', $attrs = [])
+if (!function_exists('js')) {
+    function js($src = null, $default = '', $attrs = [])
     {
         return '<script type="text/javascript" src="'.$src.'"'.attrs($attrs).'>'.$default.'</script>';
     }
 }
 
-if (! function_exists('img')) {
+if (!function_exists('img')) {
     function img($src = null, $attrs = [])
     {
         return '<img src="'.$src.'" '.attrs($attrs).' />';
     }
 }
 
-if (! function_exists('fontawesome')) {
+if (!function_exists('fontawesome')) {
     function fontawesome($version = '4.7.0', $href = null)
     {
         if (null === $href) {
@@ -49,7 +50,7 @@ if (! function_exists('fontawesome')) {
     }
 }
 
-if (! function_exists('jquery')) {
+if (!function_exists('jquery')) {
     function jquery($version = '3.2.1', $src = null)
     {
         if (null === $src) {
@@ -60,7 +61,7 @@ if (! function_exists('jquery')) {
     }
 }
 
-if (! function_exists('bootstrap_js')) {
+if (!function_exists('bootstrap_js')) {
     function bootstrap_js($version = '4.0.0-alpha.6', $src = null)
     {
         if (null === $src) {
@@ -71,7 +72,7 @@ if (! function_exists('bootstrap_js')) {
     }
 }
 
-if (! function_exists('bootstrap_css')) {
+if (!function_exists('bootstrap_css')) {
     function bootstrap_css($version = '4.0.0-alpha.6', $href = null)
     {
         if (null === $href) {
@@ -82,29 +83,29 @@ if (! function_exists('bootstrap_css')) {
     }
 }
 
-if (! function_exists('icon')) {
+if (!function_exists('icon')) {
     function icon($icon = '', $tag = 'i')
     {
         return '<'.$tag.' class="fa fa-'.$icon.'"></'.$tag.'>';
     }
 }
 
-if (! function_exists('google_analytics'))
-{
-    function google_analytics($ua='')
+if (!function_exists('google_analytics')) {
+    function google_analytics($ua = '')
     {
         // Change UA-XXXXX-X to be your site's ID
         $out = "<!-- Google Webmaster Tools & Analytics -->\n";
-        $out .='<script type="text/javascript">';
-        $out .='	var _gaq = _gaq || [];';
-        $out .="    _gaq.push(['_setAccount', '$ua']);";
-        $out .="    _gaq.push(['_trackPageview']);";
-        $out .='    (function() {';
-        $out .="      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;";
-        $out .="      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';";
-        $out .="      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);";
-        $out .="    })();";
-        $out .="</script>";
+        $out .= '<script type="text/javascript">';
+        $out .= '	var _gaq = _gaq || [];';
+        $out .= "    _gaq.push(['_setAccount', '$ua']);";
+        $out .= "    _gaq.push(['_trackPageview']);";
+        $out .= '    (function() {';
+        $out .= "      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;";
+        $out .= "      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';";
+        $out .= "      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);";
+        $out .= '    })();';
+        $out .= '</script>';
+
         return $out;
     }
 }
