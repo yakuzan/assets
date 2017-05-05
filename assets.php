@@ -13,28 +13,28 @@ function attrs($attrs) {
 if (! function_exists('css')) {
     function css($href = '', $attrs = [])
     {
-        echo '<link rel="stylesheet" type="text/css" href="'.$href.'"'.attrs($attrs).'>';
+        return '<link rel="stylesheet" type="text/css" href="'.$href.'"'.attrs($attrs).'>';
     }
 }
 
 if (! function_exists('less')) {
     function less($href = '', $attrs = [])
     {
-        echo '<link rel="stylesheet/less" type="text/css" href="'.$href.'"'.attrs($attrs).'>';
+        return '<link rel="stylesheet/less" type="text/css" href="'.$href.'"'.attrs($attrs).'>';
     }
 }
 
 if (! function_exists('js')) {
     function js($src = null, $default ='', $attrs = [])
     {
-        echo '<script type="text/javascript" src="'.$src.'"'.attrs($attrs).'>'.$default.'</script>';
+        return '<script type="text/javascript" src="'.$src.'"'.attrs($attrs).'>'.$default.'</script>';
     }
 }
 
 if (! function_exists('img')) {
     function img($src = null, $attrs = [])
     {
-        echo '<img src="'.$src.'" '.attrs($attrs).' />';
+        return '<img src="'.$src.'" '.attrs($attrs).' />';
     }
 }
 
@@ -45,7 +45,7 @@ if (! function_exists('fontawesome')) {
             $href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/'.$version.'/css/font-awesome.min.css';
         }
 
-        echo '<link rel="stylesheet" type="text/css" href="'.$href.'">';
+        return '<link rel="stylesheet" type="text/css" href="'.$href.'">';
     }
 }
 
@@ -56,7 +56,7 @@ if (! function_exists('jquery')) {
             $src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/'.$version.'/jquery.min.js';
         }
 
-        echo '<script type="text/javascript" src="'.$src.'"></script>';
+        return '<script type="text/javascript" src="'.$src.'"></script>';
     }
 }
 
@@ -67,7 +67,7 @@ if (! function_exists('bootstrap_js')) {
             $src = 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$version.'/js/bootstrap.min.js';
         }
 
-        echo '<script type="text/javascript" src="'.$src.'"></script>';
+        return '<script type="text/javascript" src="'.$src.'"></script>';
     }
 }
 
@@ -78,14 +78,14 @@ if (! function_exists('bootstrap_css')) {
             $href = 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$version.'/css/bootstrap.min.css';
         }
 
-        echo '<link rel="stylesheet" type="text/css" href="'.$href.'">';
+        return '<link rel="stylesheet" type="text/css" href="'.$href.'">';
     }
 }
 
 if (! function_exists('icon')) {
     function icon($icon = '', $tag = 'i')
     {
-        echo '<'.$tag.' class="fa fa-'.$icon.'"></'.$tag.'>';
+        return '<'.$tag.' class="fa fa-'.$icon.'"></'.$tag.'>';
     }
 }
 
