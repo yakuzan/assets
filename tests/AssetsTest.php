@@ -115,4 +115,23 @@ class AssetsTest extends TestCase
         $this->assertEquals('<script type="text/javascript" src="bootstrap.min.js"></script>', bootstrap_js(null, 'bootstrap.min.js'));
         $this->assertEquals('<script type="text/javascript" src="bootstrap.min.js"></script>', bootstrap_js('3.0.0', 'bootstrap.min.js'));
     }
+
+    /** @test */
+    public function it_render_fontawesome_icon()
+    {
+        $this->assertEquals('<i class="fa fa-edit"></i>', icon('edit'));
+    }
+
+    /** @test */
+    public function it_render_icon_with_specified_tag()
+    {
+        $this->assertEquals('<span class="fa fa-edit"></span>', icon('edit', 'span'));
+    }
+
+    /** @test */
+    public function it_render_google()
+    {
+        $this->assertEquals('<!-- Google Webmaster Tools & Analytics -->
+<script type="text/javascript">    var _gaq = _gaq || [];    _gaq.push([\'_setAccount\', \'UA-XXXXX-X\']);    _gaq.push([\'_trackPageview\']);    (function() {      var ga = document.createElement(\'script\'); ga.type = \'text/javascript\'; ga.async = true;      ga.src = (\'https:\' == document.location.protocol ? \'https://ssl\' : \'http://www\') + \'.google-analytics.com/ga.js\';      var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(ga, s);    })();</script>', google_analytics('UA-XXXXX-X'));
+    }
 }

@@ -96,7 +96,7 @@ if (!function_exists('google_analytics')) {
         // Change UA-XXXXX-X to be your site's ID
         $out = "<!-- Google Webmaster Tools & Analytics -->\n";
         $out .= '<script type="text/javascript">';
-        $out .= '	var _gaq = _gaq || [];';
+        $out .= '    var _gaq = _gaq || [];';
         $out .= "    _gaq.push(['_setAccount', '$ua']);";
         $out .= "    _gaq.push(['_trackPageview']);";
         $out .= '    (function() {';
