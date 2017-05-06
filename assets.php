@@ -14,7 +14,7 @@ function attrs($attrs)
 if (!function_exists('css')) {
     function css($href = '', $attrs = [])
     {
-        return '<link rel="stylesheet" type="text/css" href="'.$href.'"'.attrs($attrs).'>';
+        return '<link rel="stylesheet" type="text/css" href="'.$href.'" '.attrs($attrs).'>';
     }
 }
 
@@ -35,7 +35,7 @@ if (!function_exists('js')) {
 if (!function_exists('img')) {
     function img($src = null, $attrs = [])
     {
-        return '<img src="'.$src.'" '.attrs($attrs).' />';
+        return '<img src="'.$src.'" '.attrs($attrs).'/>';
     }
 }
 
