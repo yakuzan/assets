@@ -42,7 +42,7 @@ Above installation can also be simplify by using the following command:
     
    
    ```html
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    ```
    
    you can overrite the jquery version like this:
@@ -54,6 +54,6 @@ Above installation can also be simplify by using the following command:
    output :
    
    ```html
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0/jquery.min.js"></script>
    ```
 
