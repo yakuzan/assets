@@ -36,24 +36,13 @@ Above installation can also be simplify by using the following command:
     
    ```php
    echo jquery();
-   ```
-   
-   this will output jquery script tag with last version of jquery
-    
-   
-   ```html
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   output => <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    ```
    
    you can overrite the jquery version like this:
    
    ```php
    echo jquery(2.0);
-   ```
-   
-   output :
-   
-   ```html
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0/jquery.min.js"></script>
+   output => <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0/jquery.min.js"></script>
    ```
 
