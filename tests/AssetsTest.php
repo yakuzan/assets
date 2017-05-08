@@ -1,8 +1,6 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-
-class AssetsTest extends TestCase
+class AssetsTest extends PHPUnit_Framework_TestCase
 {
     /** @test */
     public function it_render_css_link()
