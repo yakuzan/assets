@@ -1,6 +1,17 @@
 assets
 ======
 
+[![Join the chat at https://gitter.im/yakuzan/boiler](https://badges.gitter.im/yakuzan/boiler.svg)](https://gitter.im/yakuzan/boiler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Latest Stable Version](https://poser.pugx.org/yakuzan/assets/v/stable)](https://packagist.org/packages/yakuzan/assets)
+[![Latest Unstable Version](https://poser.pugx.org/yakuzan/assets/v/unstable)](https://packagist.org/packages/yakuzan/assets)
+[![Build Status](https://scrutinizer-ci.com/g/yakuzan/assets/badges/build.png?b=master)](https://scrutinizer-ci.com/g/yakuzan/assets/build-status/master)
+[![Code Coverage](https://scrutinizer-ci.com/g/yakuzan/assets/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/yakuzan/assets/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yakuzan/assets/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yakuzan/assets/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/yakuzan/assets.svg)](https://packagist.org/packages/yakuzan/assets)
+[![StyleCI](https://styleci.io/repos/90417312/shield?style=flat)](https://styleci.io/repos/90417312/shield?style=flat)
+[![License](https://poser.pugx.org/yakuzan/assets/license)](https://packagist.org/packages/yakuzan/assets)
+[![composer.lock](https://poser.pugx.org/yakuzan/assets/composerlock)](https://packagist.org/packages/yakuzan/assets)
+
 a php helper for working with static assets & embedding.
 
 ## Installation
