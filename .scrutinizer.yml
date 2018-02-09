@@ -1,5 +1,7 @@
 before_commands:
-    - "composer update --prefer-source"
+  - composer self-update
+  - composer install
+  - composer update --prefer-source
 
 checks:
     php:
@@ -32,6 +34,7 @@ tools:
     php_cpd:
         enabled: true
         excluded_dirs: ["tests", "vendor"]
+    php_sim: true
     php_cs_fixer:
         enabled: true
         config:
@@ -55,7 +58,7 @@ tools:
 
 build:
     environment:
-        php: '7.0.6'
+        php: '7.1.13'
     tests:
         override:
             -
