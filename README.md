@@ -1,38 +1,26 @@
-assets
-======
+<h1 align="center">Assets is a php helper for working with static assets & embedding.</h1>
 
-[![Join the chat at https://gitter.im/yakuzan/boiler](https://badges.gitter.im/yakuzan/boiler.svg)](https://gitter.im/yakuzan/boiler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Latest Stable Version](https://poser.pugx.org/yakuzan/assets/v/stable)](https://packagist.org/packages/yakuzan/assets)
-[![Latest Unstable Version](https://poser.pugx.org/yakuzan/assets/v/unstable)](https://packagist.org/packages/yakuzan/assets)
-[![Build Status](https://scrutinizer-ci.com/g/yakuzan/assets/badges/build.png?b=master)](https://scrutinizer-ci.com/g/yakuzan/assets/build-status/master)
-[![Code Coverage](https://scrutinizer-ci.com/g/yakuzan/assets/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/yakuzan/assets/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yakuzan/assets/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yakuzan/assets/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/yakuzan/assets.svg)](https://packagist.org/packages/yakuzan/assets)
-[![StyleCI](https://styleci.io/repos/90417312/shield?style=flat)](https://styleci.io/repos/90417312/shield?style=flat)
-[![License](https://poser.pugx.org/yakuzan/assets/license)](https://packagist.org/packages/yakuzan/assets)
-[![composer.lock](https://poser.pugx.org/yakuzan/assets/composerlock)](https://packagist.org/packages/yakuzan/assets)
+<p align="center">:package: This package helps you to add toastr.js notifications to your Laravel 5 project.</p>
 
-a php helper for working with static assets & embedding.
+<p align="center">
+    <a href="https://travis-ci.org/yakuzan/assets"><img src="https://travis-ci.org/yakuzan/assets.svg?branch=master" alt="Build Status"></a>
+    <a href="https://packagist.org/packages/yakuzan/assets"><img src="https://poser.pugx.org/yakuzan/assets/v/stable" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/yakuzan/assets"><img src="https://poser.pugx.org/yakuzan/assets/v/unstable" alt="Latest Unstable Version"></a>
+    <a href="https://scrutinizer-ci.com/g/yakuzan/assets/build-status/master"><img src="https://scrutinizer-ci.com/g/yakuzan/assets/badges/build.png?b=master" alt="Build Status"></a>
+    <a href="https://scrutinizer-ci.com/g/yakuzan/assets/?branch=master"><img src="https://scrutinizer-ci.com/g/yakuzan/assets/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+    <a href="https://scrutinizer-ci.com/g/yakuzan/assets/?branch=master"><img src="https://scrutinizer-ci.com/g/yakuzan/assets/badges/coverage.png?b=master" alt="Code Coverage"></a>
+    <a href="https://packagist.org/packages/yakuzan/assets"><img src="https://poser.pugx.org/yakuzan/assets/downloads" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/yakuzan/assets"><img src="https://poser.pugx.org/yakuzan/assets/license" alt="License"></a>
+</p>
 
-## Installation
 
-To install through composer, simply put the following in your `composer.json` file:
+## Install
 
-```json
-{
-    "require-dev": {
-        "yakuzan/assets": "^0.0.2"
-    }
-}
+You can install the package using composer
+
+```sh
+$ composer require yakuzan/assets
 ```
-
-And then run `composer install` from the terminal.
-
-### Quick Installation
-
-Above installation can also be simplify by using the following command:
-
-    composer require yakuzan/assets
     
 ### alternative instalation :
   if you don't want to use composer you can still use assets, just download the file ``assets.php`` put in a subfolder and just include it like 
